@@ -1,14 +1,15 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import type { AppProps } from 'next/app';
-import '../styles/globals.css'; // Import global styles here
+// pages/_app.tsx
 
+import React from 'react';
+import type { AppProps } from 'next/app';
+import DefaultLayout from '../components/layouts/DefaultLayout'; // Import your default layout here
+import AboutLayout from '../components/layouts/AboutLayout'; // Import your about layout here
+
+// This _app.tsx file will wrap all your pages with the specified layout
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  );
+  const getLayout = Component.getLayout || ((page: any) => page);
+
+  return getLayout(<Component {...pageProps} />);
 }
 
 export default MyApp;
