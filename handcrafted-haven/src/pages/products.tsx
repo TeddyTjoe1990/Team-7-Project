@@ -1,6 +1,7 @@
 import React from 'react';
+import Layout from '../components/layouts/Layout';
 
-const ProductsPage: React.FC = () => {
+function ProductsPage () {
   return (
       <div className="bg-sandstone">
         <main className="p-8">
@@ -12,5 +13,13 @@ const ProductsPage: React.FC = () => {
       </div>
   );
 };
+
+ProductsPage.getLayout = function getLayout(page: any) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  )
+}
 
 export default ProductsPage;

@@ -1,13 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['../src/**.{js,jsx,tx,tsx}','./src/app/home**.tsx'],
+  content: [    
+      './app/**/*.{js,ts,jsx,tsx,mdx}',
+      './pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './components/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
         // Primary Colors
         'olive-green': '#7D9763',
         'sandstone': '#D4B996',
-        'brown': '#725D32',
+        'brown': '#4E422F',
         // Accent Colors
         'terracotta-orange': '#E67A2E',
         'cerulean-blue': '#4A90E2',
@@ -20,11 +24,16 @@ module.exports = {
       components: {
         // Header and Navigation
         '.header': {
+          display: 'flex',
           backgroundColor: 'var(--color-olive-green)',
         },
         '.nav-link': {
-          color: 'var(--color-sandstone)',
-          // Styling for navigation links
+          // Add flexbox properties to align links horizontally
+          display: 'flex',
+          alignItems: 'center', // Align items vertically in the center
+          padding: '0.5rem 1rem', // Add padding for better spacing
+          textDecoration: 'none', // Remove default underline from links
+          color: 'var(--color-sandstone)', // Text color for links
         },
         '.dropdown': {
           // Styles for dropdowns if we decide we need any
@@ -59,7 +68,7 @@ module.exports = {
 
         // Footer
         '.footer': {
-          backgroundColor: '#ffffff', // White background
+          backgroundColor: 'brown',
           color: 'var(--color-brown)',
         },
       },
