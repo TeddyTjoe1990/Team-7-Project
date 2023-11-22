@@ -35,7 +35,7 @@ function Header({ isLoggedIn, userName }: HeaderProps) {
       <div className="flex space-x-8 m-3 p-6">
         {isLoggedIn ? (
           <span>{userName}</span>) : (
-          <Link href="/register" className="hover:text-gray-300 cursor-pointer">
+          <Link href="/login" className="hover:text-gray-300 cursor-pointer">
             Login
           </Link>
         )}
