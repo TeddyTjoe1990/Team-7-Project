@@ -4,19 +4,16 @@ import Link from 'next/link';
 export default function Footer () {
       return (
     <footer className='text-lg bg-brown text-white'>
-      <nav>
-        <ul>
+      <nav className="gap-x-7 inline-flex p-3">
           <Link href="/about" className="hover:text-blue-300 cursor-pointer">
-            <li>Contact</li>
+            Contact
           </Link>
           <Link href="/about" className="hover:text-blue-300 cursor-pointer">
-            <li>Privacy Policy</li>
+            Privacy Policy
           </Link>
-          {/* Add other footer links as needed */}
-        </ul>
+          <p className="inline">&copy; 2023 Artisan Sales Site</p>
       </nav>
-      <p>&copy; 2023 Artisan Sales Site</p>
+      
     </footer>
   );
 };
-

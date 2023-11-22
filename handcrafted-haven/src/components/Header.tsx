@@ -1,7 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-function Header() {
+interface HeaderProps {
+  isLoggedIn: boolean;
+  userName?: string;
+}
+
+function Header({ isLoggedIn, userName }: HeaderProps) {
   return (
     <header className="bg-brown text-white">
     <nav className="flex justify-center text-3xl">
@@ -27,6 +32,14 @@ function Header() {
           </Link>
         </li>
       </ul>
+      <div className="flex space-x-8 m-3 p-6">
+        {isLoggedIn ? (
+          <span>{userName}</span>) : (
+          <Link href="/register" className="hover:text-gray-300 cursor-pointer">
+            Login
+          </Link>
+        )}
+      </div>
     </nav>
   </header>
   );
