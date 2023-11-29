@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 import { connectToDatabase } from '../../lib/mongodb';
-import User from '../../../../handcrafted-haven/src/model/user';
+import User from '../../model/user';
 
 import { NextApiRequest, NextApiResponse } from 'next';
 import crypto from 'crypto';
