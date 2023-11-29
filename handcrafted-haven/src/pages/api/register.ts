@@ -1,7 +1,7 @@
 // Register endpoint
 import { NextApiRequest, NextApiResponse } from 'next';
 import { connectToDatabase } from '../../lib/mongodb';
-import User from '../../model/User';
+import User from '../../../../handcrafted-haven/src/model/user';
 
 // Connect to MongoDB
 connectToDatabase();
