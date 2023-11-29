@@ -1,7 +1,6 @@
-<<<<<<< HEAD
- import Layout from '../components/layouts/Layout'
+import Layout from '../components/layouts/Layout'
  
-export default function Page() {
+function About() {
   return (
     <div className="bg-sandstone">
     <main className="p-8">
@@ -13,29 +12,13 @@ export default function Page() {
   </div>
   )
 }
- 
-Page.getLayout = function getLayout(page: any) {
+
+About.getLayout = function getLayout(page: React.ReactNode) {
   return (
     <Layout>
       {page}
     </Layout>
   )
 }
-=======
-import React from 'react';
 
-const AboutPage: React.FC = () => {
-  return (
-      <div className="bg-sandstone">
-        <main className="p-8">
-          <h1 className="text-4xl font-bold mb-4">About Page</h1>
-          <section>
-            {/* About content */}
-          </section>
-        </main>
-      </div>
-  );
-};
-
-export default AboutPage;
->>>>>>> 3e5c7c5cecf4af4e49ff752a948c717716822f39
+export default About;

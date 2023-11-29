@@ -4,12 +4,13 @@ import Footer from '../Footer';
 
 type LayoutProps = {
   children: ReactNode;
+  isLoggedIn?: boolean;
 };
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children, isLoggedIn = false  }) => {
   return (
-    <div className="layout">
-      <Header></Header>
+    <div className="layout min-h-screen bg-sandstone">
+      <Header isLoggedIn={isLoggedIn}></Header>
       {children}
       <Footer></Footer>
     </div>
