@@ -13,4 +13,8 @@ const ProductsPage: React.FC = () => {
   );
 };
 
+<<<<<<< HEAD
 export default ProductsPage;
+=======
+export default ProductsPage;
+>>>>>>> 3e5c7c5cecf4af4e49ff752a948c717716822f39

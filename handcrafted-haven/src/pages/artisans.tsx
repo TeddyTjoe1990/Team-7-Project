@@ -13,4 +13,8 @@ const ArtisansPage: React.FC = () => {
   );
 };
 
+<<<<<<< HEAD
 export default ArtisansPage;
+=======
+export default ArtisansPage;
+>>>>>>> 3e5c7c5cecf4af4e49ff752a948c717716822f39

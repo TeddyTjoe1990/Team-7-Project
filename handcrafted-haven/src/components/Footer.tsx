@@ -14,5 +14,9 @@ export default function Footer () {
       <p>&copy; 2023 Artisan Sales Site</p>
     </footer>
   );
+<<<<<<< HEAD
 };
 
+=======
+};
+>>>>>>> 3e5c7c5cecf4af4e49ff752a948c717716822f39

@@ -32,4 +32,8 @@ const Header: React.FC = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Header;
+=======
+export default Header;
+>>>>>>> 3e5c7c5cecf4af4e49ff752a948c717716822f39
